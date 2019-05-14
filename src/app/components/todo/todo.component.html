@@ -1,7 +1,10 @@
+<app-add-todo 
+	class="col-lg-12 p-0"
+	(addTodo)="addTodo($event)"	
+></app-add-todo>
 <app-todo-item 
 	*ngFor="let todo of todos" 
 	[todo]="todo"
 	(deleteTodo)="deleteTodo($event)"
-	class="row"
 >
 </app-todo-item>
